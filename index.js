@@ -73,6 +73,10 @@ app.get('/', (req, res) => {
     res.send("hitting the ema john server........");
 })
 
+app.get('/hello', (req, res) => {
+    res.send('hello from the server site updated');
+})
+
 app.listen(port, () => {
     console.log("listening from port ", port);
 })
